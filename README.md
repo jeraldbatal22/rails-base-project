@@ -1,6 +1,6 @@
 <h1> Stock On You App </h1>
 
-See Live https://stockonyou-trading-app.herokuapp.com/
+See Live https://stock-on-you.herokuapp.com/
 
 ![image](https://user-images.githubusercontent.com/80327905/134492430-4079f96b-055c-47dc-9a76-fc4bd20a99dd.png)
 

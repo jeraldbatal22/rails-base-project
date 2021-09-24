@@ -1,7 +1,7 @@
 class Stock < ApplicationRecord
   has_many :user_stocks, dependent: :destroy
   validates :company_name, presence: true
-  validates :ticker, presence: true, uniqueness: true
+  validates :ticker, presence: true
   validates :stock_price, presence: true
 
   def self.new_lookup(ticker_symbol)

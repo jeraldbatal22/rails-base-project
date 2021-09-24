@@ -34,7 +34,7 @@ approved
 * As a Trader, I wan to have a Transaction page to see and monitor all the transactions made by buying and
 selling stocks
 * As a Trader, I want to sell my stocks to gain money.
-* 
+
 ![image](https://user-images.githubusercontent.com/80327905/134492325-ebbb1d60-0f95-4933-bb2f-6a763f5529c7.png)
 
 ![image](https://user-images.githubusercontent.com/80327905/134492370-e4675d62-dc7e-468e-a9a4-e9e902e37fef.png)

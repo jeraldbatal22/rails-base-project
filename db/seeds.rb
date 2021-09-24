@@ -6,6 +6,29 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.create!([
+  {
+    email: "admin@stockonyou.com",
+    username: "admin",
+    firstname: "admin",
+    lastname: "stockonyou",
+    role: 0,
+    status: 1,
+    password: "123456",
+    password_confirmation: "123456"
+  },
+  {
+    email: "trader@stockonyou.com",
+    username: "trader",
+    firstname: "trader",
+    lastname: "stockonyou",
+    role: 1,
+    status: 0,
+    password: "123456",
+    password_confirmation: "123456"
+  },
+])
+
 require 'json'
 require 'open-uri'
 

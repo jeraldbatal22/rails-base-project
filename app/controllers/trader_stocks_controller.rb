@@ -13,9 +13,7 @@ class TraderStocksController < ApplicationController
     if params[:search].present?
       @stock = Stock.new_lookup(params[:search])
 
-      if !@stock
-        flash[:alert] = 'Please enter a valid symbol to search.'
-      end
+      flash[:alert] = 'Please enter a valid symbol to search.' unless @stock
     else
       flash[:valid_ticker] = 'Please enter a symbol to search.'
     end

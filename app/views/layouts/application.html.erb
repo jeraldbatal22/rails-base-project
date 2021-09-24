@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stock Trading App</title>
+    <title>Stock On You</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= favicon_link_tag asset_path('favicon.ico')%>
@@ -14,7 +14,7 @@
 
   <body class ="gradient-background">
     <div class="validation flex justify-center ">
-     <% if alert%>
+      <% if alert%>
           <%= render 'components/validations' %>
         <% elsif notice%>
           <%= render 'components/validations' %>

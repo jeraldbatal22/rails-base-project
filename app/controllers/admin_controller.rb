@@ -31,8 +31,9 @@ class AdminController < ApplicationController
   def create
     @user = User.new(user_params)
     @user.role = 1
+    @user.status = 1
     if @user.save
-      redirect_to pending_users_path, notice: 'Successfuly Created User'
+      redirect_to user_list_path, notice: 'Successfuly Created User'
     else
       render :new
     end

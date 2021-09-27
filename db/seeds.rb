@@ -32,15 +32,15 @@ User.create!([
 require 'json'
 require 'open-uri'
 
-url = "https://sandbox.iexapis.com/beta/ref-data/symbols?token=Tpk_b109cb59615f44edb9949f4b6b4af1f4"
+url = "https://sandbox.iexapis.com/beta/ref-data/symbols?token=#{ENV['IEX_PUBLISHABLE_TOKEN']}"
 stock_ids = open(url).read
 stocks = JSON.parse(stock_ids)
 
 5000.times do |index|
   stock_id = stocks[index]
   client = IEX::Api::Client.new(
-  publishable_token: 'Tpk_b109cb59615f44edb9949f4b6b4af1f4',
-  secret_token: 'Tsk_cc9973707b4a43fe803fe0fc7e9d175e',
+  publishable_token: ENV['IEX_PUBLISHABLE_TOKEN'],
+  secret_token: ENV['IEX_SECRET_TOKEN'],
   endpoint: 'https://sandbox.iexapis.com/v1'
   )
   begin
